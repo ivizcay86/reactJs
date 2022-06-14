@@ -1,0 +1,76 @@
+.header-wrapper {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.site-header {
+    padding: 20px 0;
+    background: white;
+}
+.page-width {
+    padding: 0 40px;
+}
+.header-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-item-left {
+    display: flex;
+    align-items: center;
+    flex: 1 1 130px;
+}
+.header-item-logo {
+    margin: 0px 30px;
+    align-items: center;
+    display: flex;
+    flex: 0 0 300px;
+}
+.site-logo {
+    margin: 10px 0;
+    display: block;
+    font-size: 33px;
+    line-height: 1.3em;
+    letter-spacing: .3em;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header-item-icons {
+    justify-content: flex-end;
+    display: flex;
+    flex: 1 1 130px
+}
+.site-nav-icons-link {
+   display: inline-block;
+   vertical-align: middle;
+   text-decoration: none;
+   padding: 7px 10px;
+   white-space: nowrap;
+   color: #000;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.site-nav-icons-img {
+    width: 20px;
+    height: 20px;
+}
+.text-center {
+    text-align: center;
+}
+.site-nav-ul {
+    padding: 0;
+}
+.site-nav-item {
+    display: inline-block;
+}
+.site-nav-link {
+    text-decoration: none;
+    padding: 7px 10px;
+
+}
