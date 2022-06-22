@@ -2,6 +2,7 @@ import './Navbar.css';
 import person from './../assets/icons/person.svg'
 import search from './../assets/icons/search.svg'
 import handbag from './../assets/icons/handbag.svg'
+import CartWidget from './CartWidget';
 
 
 function Navbar() {
@@ -18,14 +19,12 @@ function Navbar() {
                         <div className='site-nav'>
                             <div className='site-nav-icons'>
                                 <a className='site-nav-icons-link' href="#">
-                                    <img src={person} className="site-nav-icons-img"></img>
+                                    <img src={person} className="site-nav-icons-img" />
                                 </a>
                                 <a className='site-nav-icons-link' href="#">
-                                    <img src={search} className="site-nav-icons-img"></img>
+                                    <img src={search} className="site-nav-icons-img" />
                                 </a>
-                                <a className='site-nav-icons-link' href="#">
-                                    <img src={handbag} className="site-nav-icons-img"></img>
-                                </a>
+                                <CartWidget />
                             </div>
                         </div>
                     </div>

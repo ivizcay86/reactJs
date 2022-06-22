@@ -1,0 +1,14 @@
+.main-wrapper {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.main-header {
+    padding: 20px 0;
+    background: white;
+}
+.page-width {
+    padding: 0 40px;
+}
