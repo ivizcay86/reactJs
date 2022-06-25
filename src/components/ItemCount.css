@@ -1,0 +1,30 @@
+.itemCount-wrapper {
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.itemCount-header {
+    padding: 10px 0;
+    background: white;
+}
+.itemCount-width {
+    padding: 0 20px;
+}
+.main-general-button {
+    display: flex;
+    flex: row;
+    margin: 40px 20px;
+    border: .5px solid black;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70px;
+    height: 10px;
+    align-items: center;
+}
+.main-button {
+    border: none;
+    padding: 0;
+    background: none;
+}

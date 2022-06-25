@@ -1,4 +1,5 @@
 import './ItemListContainer.css';
+import ItemList from  './ItemList';
 
 
 function ItemListContainer() {
@@ -6,7 +7,7 @@ function ItemListContainer() {
       <div className='main-wrapper'>
         <div className='main-header'>
             <div className='page-width'>
-                <h1>Titlo provisorio</h1>
+                <ItemList />
             </div>
         </div>
       </div>
