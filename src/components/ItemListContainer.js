@@ -7,7 +7,9 @@ function ItemListContainer() {
       <div className='main-wrapper'>
         <div className='main-header'>
             <div className='page-width'>
-                <ItemList />
+              <div className='main-nav'>
+                  <ItemList />
+              </div>
             </div>
         </div>
       </div>
