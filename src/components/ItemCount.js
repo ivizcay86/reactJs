@@ -25,7 +25,7 @@ function ItemCount({stock}) {
             <div className='itemCount-width'>
                 <div className='main-general-button'>
                     <button className='main-button' onClick={minus}>-</button>
-                    <p>{num}</p>
+                    <div>{num}</div>
                     <button className='main-button' onClick={plus}>+</button>
                 </div>
             </div>

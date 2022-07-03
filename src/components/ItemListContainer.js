@@ -19,7 +19,7 @@ function ItemListContainer() {
         <div className='main-header'>
             <div className='page-width'>
               <div className='main-nav'>
-                  <ItemList />
+                  <ItemList products = {info} />
               </div>
             </div>
         </div>
