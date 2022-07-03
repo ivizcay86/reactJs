@@ -3,7 +3,8 @@
     "id": 1,
     "name":"Dear Backpack", 
     "price":20990, 
-    "stock": 10
+    "stock": 10,
+    "img":""
     },
     {
     "id": 2,

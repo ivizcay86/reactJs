@@ -1,23 +1,15 @@
-import './ItemList.css';
-import { useEffect, useState } from "react";
 import Item from './Item';
+import {Container, Row, Col} from 'react-bootstrap';
+import './ItemList.css';
 
 
-function ItemList() {
-    const [info, setInfo] = useState([])
-
-    useEffect(() => {
-          setTimeout (() =>
-            fetch('date.json')
-            .then((resp) => resp.json())
-            .then((data) => setInfo(data)),
-            2000
-          );
-     }, [])
+function ItemList({info}) {
   return (
-    <div className='main-list'>
-        {info && info.map (i => <Item key={i.id} name={i.name} price={i.price} stock={i.stock} />)}
-    </div>
+    <Container>
+        <Row>
+            {info && info.map (i => <Col lg="4"> <Item key={i.id} name={i.name} price={i.price} stock={i.stock} /> </Col>)}
+        </Row>
+    </Container>
   );
 }
 

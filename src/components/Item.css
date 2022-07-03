@@ -1,0 +1,30 @@
+.grid-item {
+    margin-bottom: 30px;
+    padding: 0 8px;
+}
+.grid-product-link {
+    text-decoration: none;
+}
+.grid-product-content {
+    text-decoration: none;
+    background: transparent;
+}
+.grid-product-image {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+.image-wrap {
+    background: white;
+    overflow: hidden;
+}
+.grid-product-meta {
+    text-align: center;
+    padding: 10px 6px;
+    line-height: 1.4;
+}
+.grid-product-title {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em;
+}
