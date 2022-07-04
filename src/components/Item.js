@@ -1,11 +1,12 @@
 import './Item.css';
 import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
 
-function Item({name, price, stock}) {
+function Item({props}) {
   return (
     <div className='grid-item'>
         <div className='grid-product-content'>
-            <a href="" className='grid-product-link'>  
+            <Link to={'details/${props.id'} className='grid-product-link'>  
                 <div className='grid-product-image'>
                     <div className='image-wrap'>
                     
@@ -13,17 +14,17 @@ function Item({name, price, stock}) {
                 </div>
                 <div className='grid-product-meta'>
                     <div className='grid-product-title'>
-                        {name}
+                        {props.name}
                     </div>
                     <div className='grid-product-price'>
-                        <spam>${price}</spam>
+                        <spam>${props.price}</spam>
                     </div>
                 </div>
-            </a>
+            </Link>
             <div className='grid-product-content'>    
                 <div className='grid-product-cart'>
                     <div>
-                        <ItemCount stock={stock} />
+                        <ItemCount stock={props.stock} />
                     </div>
                     <div>
                         <button>Add to Cart</button>
