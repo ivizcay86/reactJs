@@ -5,25 +5,30 @@ import { useParams } from 'react-router-dom'
 
 
 function ItemDetailContainer() {
-  const params = useParams ([])
+  const params = useParams ()
   const [detailInfo, setDetail] = useState([])
 
-  const getitem = () => {
-      fetch("https://api.npoint.io/41227e0e63d9dde10bd4/{params.id}")
+  useEffect(() => {
+
+    setTimeout (() =>
+
+      fetch('date.json')
+
       .then((resp) => resp.json())
-      .then((data) => {setDetail(data) 
-      })
-    }
-    useEffect(() => {
-    getitem()
-  }, []
-  )
+
+      .then((data) => setDetail(data.find(i=>i.id === params.id ))),
+
+      2000
+
+    );
+
+}, [])
     return (
       <div className='main-wrapper'>
         <div className='main-header'>
             <div className='page-width'>
               <div className='main-content-detail'>
-                  {detailInfo.length !==0> <h1>Nombre: {detailInfo[0].name}</h1>}
+                  {detailInfo ? <ItemDetail {...detailInfo}/>: <h1>Loading</h1>}
               </div>
             </div>
         </div>
