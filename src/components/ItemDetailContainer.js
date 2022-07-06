@@ -6,18 +6,18 @@ import { useParams } from 'react-router-dom'
 
 function ItemDetailContainer() {
   const params = useParams ()
-  const [detailInfo, setDetail] = useState([])
+  const [detailInfo, setDetail] = useState()
 
   useEffect(() => {
 
     setTimeout (() =>
 
       fetch('date.json')
+      .then(resp => {console.log(resp.json())
+        return resp.json()})
 
-      .then((resp) => resp.json())
-
-      .then((data) => setDetail(data.find(i=>i.id === params.id ))),
-
+      .then((data) => setDetail(data.find(i=>i.id === params.id ))
+      ),
       2000
 
     );
