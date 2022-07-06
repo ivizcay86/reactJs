@@ -7,7 +7,7 @@ function ItemList(props) {
   return (
     <Container>
         <Row>
-            {props.products && props.products.map (i => <Col lg="4">  <Item id={i.id} name={i.name} price={i.price} stock={i.stock} /> </Col>)}
+            {props.products && props.products.map (i => <Col key={i.id} lg="4">  <Item id={i.id} name={i.name} price={i.price} stock={i.stock} /> </Col>)}
         </Row>
     </Container>
   );

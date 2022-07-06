@@ -12,11 +12,9 @@ function ItemDetailContainer() {
 
     setTimeout (() =>
 
-      fetch('date.json')
-      .then(resp => {console.log(resp.json())
-        return resp.json()})
-
-      .then((data) => setDetail(data.find(i=>i.id === params.id ))
+      fetch('../date.json')
+      .then(resp => resp.json())
+      .then((data) => setDetail(data.find(i=>i.id ===parseInt(params.id )))
       ),
       2000
 
