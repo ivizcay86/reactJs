@@ -1,15 +1,25 @@
 import './ItemListContainer.css';
 import ItemList from  './ItemList';
 import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
 
 
 function ItemListContainer() {
   const [info, setInfo] = useState([])
+  const params = useParams()
 
     useEffect(() => {
           setTimeout (() =>
-            fetch('date.json')
+            fetch('../date.json')
             .then((resp) => resp.json())
+            .then((data) => {
+              if (params.category) {
+              return data.filter(products=> products.category === (params.category))
+              } else {
+              return data
+              }
+              }
+              )
             .then((data) => setInfo(data)),
             2000
           );

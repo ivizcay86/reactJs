@@ -3,6 +3,7 @@ import person from './../assets/icons/person.svg'
 import search from './../assets/icons/search.svg'
 import handbag from './../assets/icons/handbag.svg'
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -32,24 +33,24 @@ function Navbar() {
                 <div className='text-center'>
                     <ul className='site-nav-ul'>
                         <li className='site-nav-item'>
-                            <a className='site-nav-link'>
-                                <span>NEW ARRIVALS</span>
-                            </a>
+                            <Link to="/home" className='site-nav-link'>
+                                <span>HOME</span>
+                            </Link>
                         </li>
                         <li className='site-nav-item'>
-                            <a className='site-nav-link'>
-                                <span>BAGS</span>
-                            </a>
+                            <Link to="/category/barrel" className='site-nav-link'>
+                                <span>BARREL BAGS</span>
+                            </Link>
                         </li>
                         <li className='site-nav-item'>
-                            <a className='site-nav-link'>
-                                <span>ACCESORRIES</span>
-                            </a>
+                            <Link to="/category/frame" className='site-nav-link'>
+                                <span>FRAME BAGS</span>
+                            </Link>
                         </li>
                         <li className='site-nav-item'>
-                            <a className='site-nav-link'>
-                                <span>CLOTHING</span>
-                            </a>
+                            <Link to="/category/duffel" className='site-nav-link'>
+                                <span>DUFFEL BAGS</span>
+                            </Link>
                         </li>
                         <li className='site-nav-item'>
                             <a className='site-nav-link'>

@@ -4,42 +4,49 @@
     "name":"Dear Backpack", 
     "price":20990, 
     "stock": 10,
-    "img":""
+    "img":"",
+    "category":"barrel"
     },
     {
     "id": 2,
     "name":"Gotham Backpack", 
     "price":18990, 
-    "stock": 20
+    "stock": 20,
+    "category":"barrel"
     },
     {
     "id": 3,
     "name":"Travel Backpack", 
     "price":25990, 
-    "stock": 15
+    "stock": 15,
+    "category":"frame"
     },
     {
     "id": 4,
     "name":"CrossBody Backpack", 
     "price":18990, 
-    "stock": 30
+    "stock": 30,
+    "category":"frame"
     },
     {
     "id": 5,
     "name":"Flat Backpack", 
     "price":17490, 
-    "stock": 500
+    "stock": 500,
+    "category":"duffel"
     },
     {
     "id": 6,
     "name":"Belt Backpack", 
     "price":15990, 
-    "stock": 24
+    "stock": 24,
+    "category":"duffel"
     },
     {
     "id": 7,
     "name":"Messenger Backpack", 
     "price":23490, 
-    "stock": 21
+    "stock": 21,
+    "category":"duffel"
     }
 ]
