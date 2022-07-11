@@ -26,7 +26,7 @@ function ItemDetailContainer() {
         <div className='main-header'>
             <div className='page-width'>
               <div className='main-content-detail'>
-                  {detailInfo ? <ItemDetail {...detailInfo}/>: <h1>Loading</h1>}
+                  {detailInfo ? <ItemDetail {...detailInfo}/>: <h3>Loading</h3>}
               </div>
             </div>
         </div>

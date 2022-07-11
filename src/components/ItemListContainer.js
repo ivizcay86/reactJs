@@ -23,7 +23,7 @@ function ItemListContainer() {
             .then((data) => setInfo(data)),
             2000
           );
-     }, [])
+     }, [params.category])
     return (
       <div className='main-wrapper'>
         <div className='main-header'>

@@ -2,7 +2,7 @@ import './ItemCount.css';
 import { useState } from "react";
 
 
-function ItemCount({stock}) {
+function ItemCount({stock, onAdd}) {
     const [num, setNum] = useState(0);
 
     const plus = () => {
@@ -27,6 +27,9 @@ function ItemCount({stock}) {
                     <button className='main-button' onClick={minus}>-</button>
                     <div>{num}</div>
                     <button className='main-button' onClick={plus}>+</button>
+                </div>
+                <div className=''>
+                    <button className='' onClick={() => onAdd(num)}>Add to Cart</button>
                 </div>
             </div>
         </div>

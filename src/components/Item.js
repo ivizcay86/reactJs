@@ -21,16 +21,6 @@ function Item(props) {
                     </div>
                 </div>
             </Link>
-            <div className='grid-product-content'>    
-                <div className='grid-product-cart'>
-                    <div>
-                        <ItemCount stock={props.stock} />
-                    </div>
-                    <div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
   );
