@@ -25,8 +25,8 @@ export const CartProvider = ({defaultValue=[], children}) => {
         if (isInCart(product.id)) {
             const newCart = [...cart]
             for (const element of newCart) {
-                if (element.product.id === product.id) {
-                    element.quantity= element.quantity + quantity
+                if (element.id === product.id) {
+                    element.quantity = element.quantity + quantity
                 }
             }
             setCart(newCart)
@@ -35,7 +35,7 @@ export const CartProvider = ({defaultValue=[], children}) => {
                 [
                     ...cart,
                     {
-                        product: product,
+                        ...product,
                         quantity: quantity
                     }
                 ]
@@ -43,11 +43,27 @@ export const CartProvider = ({defaultValue=[], children}) => {
         }
     }
 
+    const getQuantity = () => {
+        let quantity = 0
+        cart.forEach((element) => quantity = quantity + element.quantity)
+        return quantity
+    }
+
+    const getTotal = () => {
+        let total = 0
+        cart.forEach((element) => {
+            total = total + (element.quantity * element.price)
+        })
+        return total
+    }
+
     const context = {
         clearCart,
         isInCart,
         removeItem,
         addItemToCart,
+        getQuantity,
+        getTotal,
         cart
     }
 
