@@ -12,12 +12,12 @@ function Cart() {
     window.scrollTo(0,0)
 
     useEffect(() => {
-        if (cart.lenght === 0) {
+        if (cart.length === 0) {
             setEmpty(true);
         } else {
             setEmpty(false);
         }
-    }, [cart.lenght]);
+    }, [cart.length]);
 
     if (!empty) {
         return (
