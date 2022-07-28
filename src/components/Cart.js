@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import './Cart.css';
 import { CartContext } from './store/CartContext';
 import {Link} from 'react-router-dom'
+import Order from "./Order";
 
 
 function Cart() {
@@ -48,7 +49,7 @@ function Cart() {
                         </div>
                     </div>
                 ) : (
-                    <span>{getTotal={getTotal}} </span>
+                    <Order order={cart} getTotal={getTotal} />
                 )}
             </div>
         );
